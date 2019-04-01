@@ -1,5 +1,4 @@
 package com.thoughtmechanix.licenses.controllers;
-
 import com.thoughtmechanix.licenses.model.License;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
