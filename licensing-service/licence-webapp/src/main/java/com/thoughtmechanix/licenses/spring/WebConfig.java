@@ -16,7 +16,7 @@ import java.util.Optional;
  * Classe por fazer o Tuning das configurações web da aplicação ...
  * */
 @Configuration
-@ComponentScan({"com.thoughtmechanix.licenses.controllers"})
+@ComponentScan({"com.thoughtmechanix.licenses.web.controllers"})
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
