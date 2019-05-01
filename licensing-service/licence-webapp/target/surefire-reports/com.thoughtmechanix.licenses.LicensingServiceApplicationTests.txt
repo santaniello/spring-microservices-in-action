@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.thoughtmechanix.licenses.LicensingServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.874 s - in com.thoughtmechanix.licenses.LicensingServiceApplicationTests

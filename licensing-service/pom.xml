@@ -2,18 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<packaging>pom</packaging>
+	<groupId>com.thoughtmechanix.licenses</groupId>
+	<artifactId>licensing-service</artifactId>
+	<version>1.0</version>
+	<name>EagleEye Licensing Service</name>
+	<description>Licensing Service</description>
+	<modules>
+		<module>common</module>
+		<module>licence-webapp</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.thoughtmechanix.licenses</groupId>
-	<artifactId>licensing-service</artifactId>
-	<version>1.0</version>
-	<name>EagleEye Licensing Service</name>
-	<description>Licensing Service</description>
 	<properties>
+		<!--The bootstrap class that will be used for the configuration server-->
+		<start-class>com.thoughtmechanix.licenses.Application</start-class>
 		<!--<java.version>11</java.version>-->
 	</properties>
 	<dependencies>
@@ -21,10 +28,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

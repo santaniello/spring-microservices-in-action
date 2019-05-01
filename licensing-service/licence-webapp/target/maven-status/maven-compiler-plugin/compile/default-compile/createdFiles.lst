@@ -1,0 +1,5 @@
+com/thoughtmechanix/licenses/Application.class
+com/thoughtmechanix/licenses/model/License$LicenseBuilder.class
+com/thoughtmechanix/licenses/controllers/LicenseServiceController.class
+com/thoughtmechanix/licenses/model/License.class
+com/thoughtmechanix/licenses/spring/WebConfig.class

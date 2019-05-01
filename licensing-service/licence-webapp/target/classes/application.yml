@@ -1,0 +1,12 @@
+
+# Conf Spring Boot Actuator from application
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: refresh, mappings, httptrace, metrics, heapdump, loggers, info, env, logfile, health, configprops
+    enabled-by-default: true
+  endpoint:
+    health:
+      show-details: always
