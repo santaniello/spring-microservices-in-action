@@ -1,4 +1,4 @@
-package model;
+package com.thoughtmechanix.licenses.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

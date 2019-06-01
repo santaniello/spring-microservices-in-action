@@ -20,7 +20,7 @@
 	</parent>
 	<properties>
 		<!--The bootstrap class that will be used for the configuration server-->
-		<start-class>com.thoughtmechanix.licenses.Application</start-class>
+		<start-class>com.thoughtmechanix.Application</start-class>
 		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 		<java.version>11</java.version>
 	</properties>

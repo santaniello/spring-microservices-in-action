@@ -1,4 +1,4 @@
-package licenses.spring;
+package com.thoughtmechanix.licenses.spring;
 
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -17,7 +17,7 @@ import java.util.Optional;
  * Classe por fazer o Tuning das configurações web da aplicação ...
  * */
 @Configuration
-@ComponentScan({"com.thoughtmechanix.licenses.web.controller"})
+@ComponentScan({"com.thoughtmechanix.licenses"})
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
