@@ -1,15 +1,17 @@
 package com.thoughtmechanix.licenses.model;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-@AllArgsConstructor
-public class License {
-    private String id;
-    private String organizationId;
-    private String productName;
-    private String licenseType;
+public class License{
+  private String licenseId;
+  private String organizationId;
+  private String productName;
+  private String licenseType;
+  private Integer licenseMax;
+  private Integer licenseAllocated;
+  private String comment;
 }
