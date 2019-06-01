@@ -11,21 +11,36 @@
 #################################################################################################
 
 
-######################################
-# Classpath and file-based solution  #
-######################################
 server:
-   port: 8888
+  port: 8888
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-       # Because you’re using the filesystem for storing application configuration information,
-       # you need to tell Spring Cloud configuration server to run with the “native” profile.
-        native:
-          # To acess the default confs just use this url: http://localhost:8888/licensingservice/default
-          # To acess the dev confs just use this url:http://localhost:8888/licensingservice/dev
-          search-locations: file:////opt/idea-IU-181.4203.550/workspace/spring-microservices-in-action/configurationserver/src/main/resources/config/licensingservice
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/santaniello/ms-in-action-config-repo/
+          searchPaths: licensingservice,organizationservice
+          #username: santaniello
+          #password: f1012142
+      label: master
+
+######################################
+# Classpath and file-based solution  #
+######################################
+
+#server:
+#   port: 8888
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#       # Because you’re using the filesystem for storing application configuration information,
+#       # you need to tell Spring Cloud configuration server to run with the “native” profile.
+#        native:
+#          # To acess the default confs just use this url: http://localhost:8888/licensingservice/default
+#          # To acess the dev confs just use this url:http://localhost:8888/licensingservice/dev
+#          search-locations: file:////opt/idea-IU-181.4203.550/workspace/spring-microservices-in-action/configurationserver/src/main/resources/config/licensingservice
 

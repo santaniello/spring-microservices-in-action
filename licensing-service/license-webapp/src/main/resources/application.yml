@@ -1,4 +1,6 @@
 
+
+
 # Conf Spring Boot Actuator from application
 management:
   endpoints:
