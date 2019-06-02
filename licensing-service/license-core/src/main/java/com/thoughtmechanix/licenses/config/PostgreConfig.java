@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Data
 public class PostgreConfig {
-    @Value("${spring.jpa.database}")
+    @Value("${spring.datasource.password}")
     private String database;
 }
