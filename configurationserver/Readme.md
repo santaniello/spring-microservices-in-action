@@ -154,15 +154,16 @@ Quando colocamos a propriedade encripty no yml, o nosso Config Server ganha 2 en
 POST: http://localhost:8888/encrypt
 POST: http://localhost:8888/decrypt
 
-Nesse caso, vamos usar o endpoint encrypt para encriptar os dados que queremos e substituir no arquivo de configuração do nosso client no github (licenseservice por exemplo), porém, precisamos colocar um prefixo antes do dado encripitado:
-
-***OBS: Para que a desencripitação ocorra com sucesso na aplicação, precisamos obrigatoriamente encripitar a informação utilizando o endpoint de encrypt conforme a imagem abaixo pois caso contrário, a nossa aplicação cliente não conseguirá desencripitar a informação ocasionando um erro***
+Nesse caso, vamos usar o endpoint encrypt para encriptar os dados que queremos:
 
 ![Encrypt](./IMGS/encrypt.png)
 
-spring.datasource.password: "{cipher}5c5a8a00207a04f95d4614590afaa260e2110cec90e0f3e20e1231df72ab10c0"
+Agora, basta pegar o valor gerado pelo endpoint e colocar o valor no atributo que queremos no nosso aruivo de configuração yml 
+que está no github. Um ponto que não podemos esquecer é de colocar o prefixo ***{cipher}*** antes da criptografia, senão, a aplicação cliente não vai conseguir desencripitografar:
+ 
+***spring.datasource.password: "{cipher}5c5a8a00207a04f95d4614590afaa260e2110cec90e0f3e20e1231df72ab10c0"***
 
-Repare que temos o prefixo {cipher} antes da propriedade cripitografada no nosso yml no github.
+***OBS: Para que a desencripitação ocorra com sucesso na aplicação além do prefixo {cipher}, precisamos obrigatoriamente encripitar a informação utilizando o endpoint de encrypt conforme a imagem mostrada acima pois caso contrário, a nossa aplicação cliente não conseguirá desencripitar a informação ocasionando um erro.***
 
 Passo 4:
 
