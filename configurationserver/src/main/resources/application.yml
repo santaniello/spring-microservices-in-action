@@ -19,12 +19,13 @@ spring:
       server:
         encrypt.enabled: false
         git:
-          #uri: https://github.com/santaniello/ms-in-action-config-repo/
-          uri: ssh://git@github.com:santaniello/ms-in-action-config-repo2.git
-          # searchPaths: licensingservice,organizationservice
-         # username: santaniello
-         # password: f10121426
-      label: master
+          uri: git@github.com:santaniello/ms-in-action-config-repo.git
+          searchPaths: licensingservice,organizationservice
+          # Usando HTTPS
+          # uri: https://github.com/santaniello/ms-in-action-config-repo/
+          # username: XXXX
+          # password: YYYYY
+        label: master
 
 ######################################
 # Classpath and file-based solution  #
