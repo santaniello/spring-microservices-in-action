@@ -118,9 +118,8 @@ http://localhost:8888/licensingservice/sua-branch
 
 Exemplo:
 
-http://localhost:8888/licensingservice/prd
-ou
-http://localhost:8888/licensingservice/default
+-   http://localhost:8888/licensingservice/prd
+-   http://localhost:8888/licensingservice/default
 
 
 ### Encripitação de Dados:
@@ -151,8 +150,8 @@ Passo 3:
 
 Quando colocamos a propriedade encripty no yml, o nosso Config Server ganha 2 endpoints chamados encrypt e decrypt que usaremos para encripitar e desencripitar as informações.
 
-POST: http://localhost:8888/encrypt
-POST: http://localhost:8888/decrypt
+- POST: http://localhost:8888/encrypt
+- POST: http://localhost:8888/decrypt
 
 Nesse caso, vamos usar o endpoint encrypt para encriptar os dados que queremos:
 
@@ -179,6 +178,6 @@ Basta colocar a seguinte dependência no projeto cliente:
 ```
 
 ***Referências:***
-https://www.youtube.com/watch?v=aTSWBYwgd1U
-https://www.youtube.com/watch?v=D10vKeYxn-Y
-https://www.baeldung.com/spring-cloud-configuration
+-   https://www.youtube.com/watch?v=aTSWBYwgd1U
+-   https://www.youtube.com/watch?v=D10vKeYxn-Y
+-   https://www.baeldung.com/spring-cloud-configuration
